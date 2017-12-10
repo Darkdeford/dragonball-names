@@ -1,6 +1,6 @@
 {
   "name": "dragonball-names",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "Get random Dragon Ball names",
   "main": "dist/index.js",
   "scripts": {
@@ -17,8 +17,7 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "validate": "npm run cover && npm run check-coverage",
-    "setup": "npm install && npm run validate",
-    "report-coverage": "cat ./coverage/lcov.info | codecov"
+    "setup": "npm install && npm run validate"
   },
   "repository": {
     "type": "git",
