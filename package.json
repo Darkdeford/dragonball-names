@@ -17,7 +17,8 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "validate": "npm run cover && npm run check-coverage",
-    "setup": "npm install && npm run validate"
+    "setup": "npm install && npm run validate",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
     "type": "git",
