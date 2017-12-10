@@ -1,7 +1,7 @@
 {
   "name": "starwars-names",
   "version": "0.0.0-semantically-released",
-  "description": "Get random Star Wars names",
+  "description": "Get random Dragon Ball names",
   "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
@@ -17,30 +17,27 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "validate": "npm run cover && npm run check-coverage",
-    "setup": "npm install && npm run validate",
-    "setup:fem": "git checkout FEM/10.1-docs && npm install && npm run validate && rimraf .nyc_output coverage dist .git/hooks && git checkout FEM/00-scratch",
-    "setup:egghead": "npm run setup && rimraf dist coverage && git checkout lesson/02-setting-up-github",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "setup": "npm install && npm run validate"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentcdodds/starwars-names.git"
+    "url": "https://github.com/Darkdeford/dragonball-names.git"
   },
   "keywords": [
     "random",
-    "star",
-    "wars"
+    "dragon",
+    "ball"
   ],
   "files": [
     "dist",
     "README.md"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "author": "Bartłomiej Łoza <bartekloza@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/starwars-names/issues"
+    "url": "https://github.com/Darkdeford/dragonball-names/issues"
   },
-  "homepage": "https://github.com/kentcdodds/starwars-names#readme",
+  "homepage": "https://github.com/Darkdeford/dragonball-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
@@ -75,7 +72,6 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  
   "babel": {
     "presets": [
       "es2015",
